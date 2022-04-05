@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Global Space</title>
+  </head>
+  <body>
+    <h1>The Global Space</h1>
+    <p>Open the console</p>
+    <script>
+      function printList(list = [], target = document.body) {
+        const ul = document.createElement("ul");
+        list.forEach((item) => {
+          const li = document.createElement("li");
+          li.innerText = item;
+          ul.appendChild(li);
+        });
+        target.appendChild(ul);
+      }
+    </script>
+    <script>
+      function printList(list) {
+        list.forEach((item) => console.log(item));
+      }
+    </script>
+    <script>
+      printList("abcdefghijklmnopqrstuvwxyz".split(""));
+    </script>
+  </body>
+</html>

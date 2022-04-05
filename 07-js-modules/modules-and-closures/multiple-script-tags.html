@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Multiple Script Tags</title>
+  </head>
+  <body>
+    <h1>Multiple Script Tags: Order Matters!</h1>
+    <p>Open the console</p>
+    <script>
+      //
+      // Causes Error: Because order Matters
+      //
+
+      printList("abcdefghijklmnopqrstuvwxyz".split(""));
+    </script>
+    <script>
+      function printList(list = [], target = document.body) {
+        const ul = document.createElement("ul");
+        list.forEach((item) => {
+          const li = document.createElement("li");
+          li.innerText = item;
+          ul.appendChild(li);
+        });
+        target.appendChild(ul);
+      }
+    </script>
+  </body>
+</html>

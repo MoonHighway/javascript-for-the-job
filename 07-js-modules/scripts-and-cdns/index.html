@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CDNs</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <h1 class="animate__animated animate__bounce">
+      How Much Money Do you make
+    </h1>
+    <form class="animate__animated animate__fadeInLeft">
+      <label>Income: $</label>
+      <input id="income" name="income" />
+      <label>Telephone:</label>
+      <input id="phone-number" name="income" />
+    </form>
+    <pre id="cow-target" class="animate__animated animate__fadeInRight"></pre>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cleave.js/1.6.0/cleave.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cleave.js/1.6.0/addons/cleave-phone.us.js"></script>
+    <script>
+      var income = new Cleave("input#income", {
+        numeral: true,
+        numeralThousandsGroupStyle: "thousand",
+      });
+      var phone = new Cleave("input#phone-number", {
+        phone: true,
+        phoneRegionCode: "US",
+      });
+    </script>
+    <script src="https://unpkg.com/cowsay@1.4.0/build/cowsay.umd.js"></script>
+    <script>
+      document.getElementById("cow-target").innerText = cowsay.say({
+        text: "It's a CDN Script party y'all",
+      });
+    </script>
+  </body>
+</html>

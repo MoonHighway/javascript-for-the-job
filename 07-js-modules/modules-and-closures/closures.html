@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Multiple Script Tags</title>
+  </head>
+  <body>
+    <h1>Multiple Script Tags: Order Matters!</h1>
+    <p>Open the console</p>
+    <script>
+      const util = (function () {
+        let calls = 0;
+
+        function printList(list) {
+          list.forEach((item) => console.log(item));
+          calls++;
+        }
+
+        return {
+          printList,
+          calledTooMuch: () => calls >= 3,
+        };
+      })();
+    </script>
+    <script>
+      util.printList("abcdefghijklmnopqrstuvwxyz".split(""));
+      util.printList(["no", "conflict", "here"]);
+
+      console.log("calls: ", util.calledTooMuch());
+    </script>
+  </body>
+</html>

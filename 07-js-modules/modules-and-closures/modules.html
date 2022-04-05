@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Multiple Script Tags</title>
+  </head>
+  <body>
+    <h1>Multiple Script Tags: Order Matters!</h1>
+    <p>Open the console</p>
+    <script>
+      const DOM = (function () {
+        function printList(list = [], target = document.body) {
+          const ul = document.createElement("ul");
+          list.forEach((item) => {
+            const li = document.createElement("li");
+            li.innerText = item;
+            ul.appendChild(li);
+          });
+          target.appendChild(ul);
+        }
+        return {
+          printList,
+        };
+      })();
+    </script>
+    <script>
+      const util = (function () {
+        function printList(list) {
+          list.forEach((item) => console.log(item));
+        }
+
+        return {
+          printList,
+        };
+      })();
+    </script>
+    <script>
+      DOM.printList("abcdefghijklmnopqrstuvwxyz".split(""));
+      util.printList(["no", "conflict", "here"]);
+    </script>
+  </body>
+</html>

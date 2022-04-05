@@ -1,0 +1,35 @@
+body {
+  background-color: #ededed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body > h1 {
+  margin: 1em;
+  padding: 1em;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  font-family: Arial, sans-serif;
+}
+
+input {
+  padding: 1em;
+  font-size: 1.5em;
+  text-align: center;
+  background-color: #ededed;
+  border: none;
+}
+
+button {
+  padding: 1em;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+div {
+  margin: 0.5em;
+  font-size: 3em;
+  font-family: Arial, sans-serif;
+}

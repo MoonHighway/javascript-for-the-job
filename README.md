@@ -20,9 +20,13 @@ This repo contains everything you'll need to participate in the class. Each cour
 
 ## Course Sections 📦
 
-The course is broken down into 4 parts: three sections and a longer lab activity.
+The course is broken down into 8 parts: six sections and two longer lab activities.
 
 - [Hello World](https://github.com/MoonHighway/javascript-for-the-job/tree/main/01-hello-world): A look at the building blocks of the JavaScript language and an overview of how JavaScript works in the browser.
 - [Data Structures](https://github.com/MoonHighway/javascript-for-the-job/tree/main/02-data-structures): An introduction to Node.js with a deeper dive on JavaScript data structures like objects, arrays, and functions.
 - [HTTP](https://github.com/MoonHighway/javascript-for-the-job/tree/main/03-http): An exploration of how servers and clients communicate over HTTP asynchronously.
 - [Lab Activity](https://github.com/MoonHighway/javascript-for-the-job/tree/main/04-lab-activity): Putting it all together with a lab project to build a web server with Node.js.
+- [Object-Oriented JavaScript](https://github.com/MoonHighway/javascript-for-the-job/tree/main/05-object-oriented-js)
+- [Functional JavaScript](https://github.com/MoonHighway/javascript-for-the-job/tree/main/06-functional-js)
+- [JavaScript Modules](https://github.com/MoonHighway/javascript-for-the-job/tree/main/07-js-modules)
+- [Lab Activity](https://github.com/MoonHighway/javascript-for-the-job/tree/main/08-lab-code-challenge)
