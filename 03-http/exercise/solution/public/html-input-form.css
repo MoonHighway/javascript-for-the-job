@@ -1,0 +1,48 @@
+body {
+  background-color: gray;
+}
+
+.container {
+  background-color: white;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+  grid-template-rows: 1fr 2fr 1fr;
+  grid-template-areas:
+    ". header header ."
+    ". main main ."
+    ". footer footer .";
+  font-size: 1.2em;
+  font-family: Monaco;
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
+
+input {
+  height: 24px;
+  margin: 5px;
+}
+
+button {
+  height: 30px;
+}
+
+#output > p {
+  background-color: gray;
+  color: white;
+  border-radius: 0 3em 3em 0;
+  line-height: 2em;
+  width: 50%;
+  padding-left: 1em;
+  border: 1px solid yellow;
+}

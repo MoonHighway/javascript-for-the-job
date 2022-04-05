@@ -1,0 +1,22 @@
+{
+  "name": "javascript-for-the-job",
+  "version": "1.0.0",
+  "description": "A course to teach JavaScript fundamentals",
+  "main": "index.js",
+  "scripts": {
+    "intro": "npx serve 01-hello-world/slides",
+    "dot-click": "npx serve 01-hello-world/lab/slides",
+    "objects-arrays": "npx serve 02-data-structures/lab/slides",
+    "http": "npx serve 03-http/slides",
+    "mood-server": "npx serve 04-lab-activity/slides"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MoonHighway/javascript-for-the-job.git"
+  },
+  "keywords": [
+    "javascript",
+    "nodejs"
+  ],
+  "author": "Moon Highway @moonhighway"
+}

@@ -1,0 +1,40 @@
+@import "http://fonts.googleapis.com/css?family=Chango";
+
+html,
+body {
+  height: 100%;
+}
+body {
+  background-color: #eef;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+div#dot {
+  border-radius: 50%;
+  height: 10em;
+  width: 10em;
+  background-color: red;
+  border: solid 4px blue;
+  box-shadow: 0.5em 0.5em 1em 0.2em #112;
+  cursor: pointer;
+  margin: 2em;
+}
+
+div#results {
+  font-family: Chango;
+  font-size: 1.25em;
+  color: #009;
+  text-shadow: 0.1em 0.1em 1em black;
+  text-align: center;
+}
+
+div#results.blowPow {
+  height: 2em;
+  width: 2em;
+  color: yellow;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}

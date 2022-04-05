@@ -1,0 +1,20 @@
+body {
+  background-color: teal;
+  font-family: "Arial";
+}
+
+header {
+  background-color: magenta;
+}
+
+ul {
+  list-style-type: circle;
+}
+
+#main-heading {
+  font-size: 60px;
+}
+
+.fun {
+  color: black;
+}

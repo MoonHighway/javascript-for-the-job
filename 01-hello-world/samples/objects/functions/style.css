@@ -1,0 +1,20 @@
+body {
+  background-color: goldenrod;
+  font-family: "Arial";
+}
+
+header {
+  background-color: #660000;
+}
+
+ul {
+  list-style-type: circle;
+}
+
+#main-heading {
+  font-size: 60px;
+}
+
+.fun {
+  color: tan;
+}
